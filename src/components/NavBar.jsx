@@ -1,9 +1,12 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
+import styled from 'styled-components';
+import Wrapper from '../assets/wrappers/Navbar'
+
 
 const NavBar = () => {
   return (
-    <nav>
+    <Wrapper>
         <div className="nav-center">
           <span className='logo'>MixMaster</span>
           <div className='nav-links'>
@@ -18,7 +21,7 @@ const NavBar = () => {
               </NavLink>
           </div>
         </div>
-    </nav>
+    </Wrapper>
   )
 }
 
